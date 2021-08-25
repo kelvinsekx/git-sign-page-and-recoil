@@ -45,17 +45,16 @@ const GithubSignup = () => {
 
 const StyledMain = styled.div`
 padding-top: 1.8rem;
-//display: flex;
+display: flex;
 div#main{
-	width: 35vw;
+	flex-basis: 12rem;
 	margin: 0 auto;
 	display: flex;
 	gap:1em;
 	flex-direction: column;
 	align-items: center;
-	//border: 1px solid red;back#F6F8FA for btn#2C974B forlinks:#C0F8FA
 	#card{
-		background-color: rgba(28, 39, 71, 0.3);
+		background-color:#F6F8FA ;
 		border-radius: 5px;
 		padding:1rem;
  		form{

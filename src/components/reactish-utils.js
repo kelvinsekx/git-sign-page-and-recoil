@@ -4,7 +4,12 @@ import styled from "styled-components"
 
 export const Input = ({For, onChange, st})=> 
 <StyledInput>
-    <div style={{textAlign: "left", paddingBottom:"0.2em"}}>{For}</div>
+	{For == "username" ? 
+	<div style={{textAlign: "left",fontSize: "80%", paddingBottom:"0.2em"}}>Username or email address</div> :
+	<div style={{display: "flex", fontSize: "80%",justifyContent: "space-between"}}>
+		<span>Password</span>
+	<span style={{color: '#54B4F1'}}>forgot password?</span>
+	</div>}
     <TextInput 
         name={For}
         value={st}
@@ -16,7 +21,7 @@ export const Input = ({For, onChange, st})=>
 const StyledInput = styled.div`
 input{
     height: 1.8em;
-    width: 14rem;
+    width: 16rem;
     background-color: white;
 }
 `
@@ -33,7 +38,7 @@ export const SubmitBtn = ({onSubmit, done})=>
 </StyledBtn>;
 const StyledBtn = styled.div`
 button{
-    width: 14rem;
+    width: 16rem;
     background-color: green;
     border-radius: 5px;
 }

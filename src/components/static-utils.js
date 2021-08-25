@@ -24,9 +24,9 @@ export const GitCA = ()=> <StyledCA>
 const StyledCA = styled.div`
 border: 1px solid rgba(0,0,0,0.2);
 border-radius: 5px;
-width: 16rem;
+width: 18rem;
 padding: 0.4em 0;
 span{
-	color: rgb(18, 180, 48);
+	color: #54B4F1;
 }
 `
