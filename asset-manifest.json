@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/git-sign-page-and-recoil/static/css/main.a617e044.chunk.css",
+    "main.js": "/git-sign-page-and-recoil/static/js/main.6bcefc79.chunk.js",
+    "main.js.map": "/git-sign-page-and-recoil/static/js/main.6bcefc79.chunk.js.map",
+    "runtime-main.js": "/git-sign-page-and-recoil/static/js/runtime-main.d3e9a0a3.js",
+    "runtime-main.js.map": "/git-sign-page-and-recoil/static/js/runtime-main.d3e9a0a3.js.map",
+    "static/js/2.06be211c.chunk.js": "/git-sign-page-and-recoil/static/js/2.06be211c.chunk.js",
+    "static/js/2.06be211c.chunk.js.map": "/git-sign-page-and-recoil/static/js/2.06be211c.chunk.js.map",
+    "static/js/3.12a9b048.chunk.js": "/git-sign-page-and-recoil/static/js/3.12a9b048.chunk.js",
+    "static/js/3.12a9b048.chunk.js.map": "/git-sign-page-and-recoil/static/js/3.12a9b048.chunk.js.map",
+    "index.html": "/git-sign-page-and-recoil/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/git-sign-page-and-recoil/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.06be211c.chunk.js.LICENSE.txt": "/git-sign-page-and-recoil/static/js/2.06be211c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d3e9a0a3.js",
+    "static/js/2.06be211c.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.6bcefc79.chunk.js"
+  ]
+}
