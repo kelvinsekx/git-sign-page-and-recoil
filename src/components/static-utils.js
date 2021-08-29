@@ -27,6 +27,6 @@ border-radius: 5px;
 width: 18rem;
 padding: 0.4em 0;
 span{
-	color: #54B4F1;
+	color: #1d4eee;
 }
 `

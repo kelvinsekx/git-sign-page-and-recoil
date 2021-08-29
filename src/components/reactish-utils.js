@@ -4,11 +4,11 @@ import styled from "styled-components"
 
 export const Input = ({For, onChange, st})=> 
 <StyledInput>
-	{For == "username" ? 
+	{For === "username" ? 
 	<div style={{textAlign: "left",fontSize: "80%", paddingBottom:"0.2em"}}>Username or email address</div> :
 	<div style={{paddingBottom: "0.2em",display: "flex", fontSize: "80%",justifyContent: "space-between"}}>
 		<span>Password</span>
-	<span style={{color: '#54B4F1'}}>forgot password?</span>
+	<span style={{color: '#1d4eee'}}>forgot password?</span>
 	</div>}
     <TextInput 
         name={For}
@@ -32,16 +32,19 @@ export const SubmitBtn = ({onSubmit, done})=>
 <GrommetButton
     primary 
     onClick={onSubmit}
-    disabled={done ? false : true}
-    label= {done ? "Sign in" : "signing in..."}
+    disabled={!done ? false : true}
+    label= {!done ? "Sign in" : "signing in..."}
 />
 </StyledBtn>;
 const StyledBtn = styled.div`
 button{
     width: 16rem;
     font-size: 95%;
-//	height: 70%;
-    background-color: green;
+    background-color: rgb(8, 165, 8);
     border-radius: 5px;
+    &:disabled{
+        background-color: rgba(8, 175, 8);
+        opacity: 0.76;
+    },
 }
 `

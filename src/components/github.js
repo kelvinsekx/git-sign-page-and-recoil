@@ -5,22 +5,23 @@ import {Input, SubmitBtn} from "./reactish-utils";
 import styled from "styled-components";
 import {Card} from "grommet";
 
-import { useRecoilState } from "recoil";
-import {logInfo, doneTask} from "./../stateManager";
-
+const {useState} = React;
 const GithubSignup = () => {
-	const [state, setState] = useRecoilState(logInfo);
-	const [done, setDone] = useRecoilState(doneTask);
+	const [state, setState] = useState({
+        username: "",
+        password: "",
+        done: false
+    })
 
 	const onSubmit = ()=> {
-		setDone(false)
+		setState({...state, done: true})
 		return setTimeout(()=> {
-		setDone(true)
+			setState({...state, done: false})
 		alert(state.username + " you're signed in")
 	}, 2000)}
 	const onChange = name => event => setState({...state, [name]: event.target.value})
 
-	return <StyledMain>
+	return <Styles>
 	<div id="main">
 		<Banner />
 		<Card id="card">
@@ -35,15 +36,15 @@ const GithubSignup = () => {
 				st={state.password} />
 			<SubmitBtn 
 				onSubmit={onSubmit}
-				done={done} />
+				done={state.done} />
 			</form>
 		</Card>
 		<ExtraInfo />
 	</div>
-	</StyledMain>
+	</Styles>
 };
 
-const StyledMain = styled.div`
+const Styles = styled.div`
 padding-top: 1.8rem;
 display: flex;
 div#main{

@@ -2,12 +2,6 @@ import {
     atom
 } from 'recoil';
 
-// import React from "react"
-
-// const [state, setState] = React.useState({
-//     username: "",
-//     password: ""
-// })
 
 export const logInfo = atom({
     key: "logInfo",
@@ -15,11 +9,5 @@ export const logInfo = atom({
         username: "",
         password: "",
         done: false
-    }
-})
-export const doneTask = atom({
-    key: "doneTask",
-    default: {
-        done: true
     }
 })
