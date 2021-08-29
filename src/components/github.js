@@ -5,13 +5,13 @@ import {Input, SubmitBtn} from "./reactish-utils";
 import styled from "styled-components";
 import {Card} from "grommet";
 
+import {logInfo} from "./../stateManager.js"
+import {useRecoilState} from "recoil"
+
 const {useState} = React;
 const GithubSignup = () => {
-	const [state, setState] = useState({
-        username: "",
-        password: "",
-        done: false
-    })
+	// take note of this line
+	const [state, setState] = useRecoilState(logInfo)
 
 	const onSubmit = ()=> {
 		setState({...state, done: true})
